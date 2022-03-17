@@ -21,4 +21,10 @@ function InputNumber(props: Props) {
   );
 }
 
+// interface Props2{
+//   value:number;
+//   onchange: (value : number)=> void;
+//   className?: string;
+// }
+
 export default InputNumber;
