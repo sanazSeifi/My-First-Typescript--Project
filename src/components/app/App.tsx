@@ -1,15 +1,17 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TriangleCalculator from "../pages/TriangleCalcuator";
-import RectangleCalculator from "../pages/RectangleCalculator"
+import RectangleCalculator from "../pages/RectangleCalculator";
+
 function App() {
   return (
-    <div className="App">
-      <TriangleCalculator />
-      <br />
-      <br />
-      <br />
-      <hr />
-      <RectangleCalculator />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<div>Main Page</div>} />
+        <Route path="/jafar" element={<div>Man Jafar Hastam!</div>} />
+        <Route path="/triangle" element={<TriangleCalculator />} />
+        <Route path="/rectangle" element={<RectangleCalculator />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
