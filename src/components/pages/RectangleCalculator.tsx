@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { RectangleEdges } from "../../models/rectangle.model";
 import Input from "../forms/Input";
 import InputNumber from "../forms/Number";
@@ -12,10 +13,11 @@ function RectangleCalculator() {
     edge3: 0,
     edge4: 0,
   });
-
+  const navigator = useNavigate();
   return (
     <>
       <h1>Here is the calculation of Rectangle</h1>
+      <div onClick={()=>{navigator("/triangle")}} >Go to TriangleCalculator</div>
       <hr />
       <label>Inter Your Name</label>
       <Input
