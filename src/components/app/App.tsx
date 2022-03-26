@@ -13,7 +13,7 @@ function App() {
         <Route path="/triangle" element={<TriangleCalculator />} />
         <Route path="/rectangle" element={<RectangleCalculator />} />
         <Route path="/users" element={<UsersList />} />
-        <Route path="/users/:id" element={<UserDetail />} />
+        <Route path="/users/:key" element={<UserDetail />} />
       </Routes>
     </BrowserRouter>
   );

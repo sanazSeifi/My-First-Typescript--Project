@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 
 function UserDetail() {
-const {id} = useParams();
+  console.log(useParams())
+const {key} = useParams();
   return (
    <div>
-     {`man user ${id} hastam`}
+     {`man user ${key} hastam`}
    </div>
   );
 }

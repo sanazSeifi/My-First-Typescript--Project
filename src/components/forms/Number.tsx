@@ -12,9 +12,9 @@ function InputNumber(props: Props) {
       value={props.value}
       onChange={(e: any) => {
         let numericValue: number = Number(e.target.value);
-        if (numericValue === NaN) {
-          numericValue = 0;
-        }
+        // if (numericValue === NaN) {
+        //   numericValue = 0;
+        // }
         props.onchange(numericValue);
       }}
     />
