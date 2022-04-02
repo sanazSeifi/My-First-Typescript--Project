@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Table from "../tools/table";
 
-function UsersList() {
+function PostsList() {
   const [listData, setListData] = useState([]);
   const [loader, setLoder] = useState(false);
   const navigator = useNavigate();
@@ -16,7 +16,7 @@ function UsersList() {
     setLoder(true);
     try {
       const response = await axios.get(
-        "https://jsonplaceholder.typicode.com/users"
+        "https://jsonplaceholder.typicode.com/posts"
       );
       setListData(response.data);
     } catch (error) {
@@ -32,25 +32,7 @@ function UsersList() {
       ) : (
         <>
           <div>list</div>
-          <Table
-            data={listData}
-            actions={[
-              {
-                title: "edit",
-                type: "eddit",
-                actionCallBack: (rowData: any, type: string) => {
-                  console.log(rowData, type);
-                },
-              },
-              {
-                title: "delet",
-                type: "delet",
-                actionCallBack: (rowData: any, type: string) => {
-                  console.log(rowData, type);
-                },
-              },
-            ]}
-          />
+          <Table data={listData} actions={[]} />
 
           {/* {listData.map((item: any, index: number) => {
             return (
@@ -69,4 +51,4 @@ function UsersList() {
   );
 }
 
-export default UsersList;
+export default PostsList;

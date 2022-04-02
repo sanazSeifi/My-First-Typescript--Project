@@ -1,0 +1,34 @@
+.custom-table {
+    display: block;
+    border: 1px solid grey;
+}
+
+.custom-table-header {
+    display: block;
+    max-width: 100%;
+    /* justify-content: space-between; */
+    border-bottom: 2px solid black;
+}
+
+.custom-table-body-row {
+    display: block;
+    max-width: 100%;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+}
+
+.custom-table-body-row-cell,
+.custom-table-header-cell {
+    display: inline-block;
+    text-align: center;
+}
+
+.tabel-action-class {
+    display: inline-block;
+    background: #000;
+    border-radius: 8px;
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+    margin: 3px;
+}
