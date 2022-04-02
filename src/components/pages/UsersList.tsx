@@ -36,9 +36,10 @@ function UsersList() {
               <div
                 onClick={() => {
                   navigator(`/users/${item.id}`);
+                  // navigator(`/users/${item.id}?data=${JSON.stringify(item)}`);
                 }}
               >
-                <span>{item.id}</span>
+                {/* <span>{item.id}</span> */}
                 <pre>{JSON.stringify(item)}</pre>
               </div>
             );

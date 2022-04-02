@@ -9,11 +9,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<div>Main Page</div>} />
-        <Route path="/jafar" element={<div>Man Jafar Hastam!</div>} />
+        <Route path="/jafar" element={<div>Man Jeeffri Hastam!</div>} />
         <Route path="/triangle" element={<TriangleCalculator />} />
         <Route path="/rectangle" element={<RectangleCalculator />} />
         <Route path="/users" element={<UsersList />} />
-        <Route path="/users/:key" element={<UserDetail />} />
+        <Route path="/users/:entityId" element={<UserDetail />} />
       </Routes>
     </BrowserRouter>
   );
