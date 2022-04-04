@@ -1,0 +1,6 @@
+export enum REDUX_ACTIONS {
+  //value,
+  CHANGE_VALUE = "CHANGE_VALUE",
+  RESET_VALUE = "RESET_VALUE",
+  //OTHER_IELDS,
+}
